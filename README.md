@@ -10,7 +10,7 @@ Para os problemas que envolviam a criação de um código, há o trecho de códi
 Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.
 
 - Link para a [classe](src/main/java/com/kauassilva/project/FibonacciSequence.java)
-- Link para os [testes unitários]()
+- Link para os [testes unitários](src/test/java/com/kauassilva/project/FibonacciSequenceTest.java)
   
 ```java
 public class FibonacciSequence {
@@ -56,13 +56,23 @@ public class FibonacciSequence {
 }
 ```
 
+### Casos de teste
+
+- Deve retornar se contém ou não corretamente para
+  - o caso 1: número 0, esperado true
+  - o caso 2: número 1, esperado true
+  - o caso 3: número 4, esperado false
+  - o caso 4: número 50, esperado false
+  - o caso 5: número 89, esperado true
+  - o caso 6: número 2584, esperado true
+
 
 ## Problema 2
 
 Escreva um programa que verifique, em uma string, a existência da letra ‘a’, seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela ocorre.
 
 - Link para a [classe](src/main/java/com/kauassilva/project/OccurrencesOfA.java)
-- Link para os [testes unitários]()
+- Link para os [testes unitários](src/test/java/com/kauassilva/project/OccurrencesOfATest.java)
   
 ```java
 public class OccurrencesOfA {
@@ -99,6 +109,16 @@ public class OccurrencesOfA {
 
 }
 ```
+
+### Casos de teste
+
+- Deve retornar se contém ou não corretamente para
+    - o caso 1: esperado 1, para o texto: O sol está lindo entre as nuvens.
+    - o caso 2: esperado 5, para o texto: A risada dela é linda.
+    - o caso 3: esperado 2, para o texto: Café, por favor.
+    - o caso 4: esperado 5, para o texto: Sob o céu estrelado, conversamos até o amanhecer.
+    - o caso 5: esperado 10, para o texto: A antiga livraria tinha cheiro estranho e livros amarelados.
+    - o caso 6: esperado 0, para o texto: Pegue o copo!
 
 
 ## Problema 3

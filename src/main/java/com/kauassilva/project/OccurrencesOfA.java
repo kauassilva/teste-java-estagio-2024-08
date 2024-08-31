@@ -22,7 +22,7 @@ public class OccurrencesOfA {
      * @param text The text in which to count the occurrences of 'a' or 'A'.
      * @return The number of occurrences of 'a' or 'A' in the given text.
      */
-    private static int calculateOccurrences(String text) {
+    public static int calculateOccurrences(String text) {
         int number = 0;
 
         for (char character : text.toCharArray()) {
